@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+    <style>
+      .xyzClass {
+        background-color: salmon;
+      }
+      .abcClass {
+        border: 5px solid red;
+      }
+    </style>
+    <!-- here, we can place cdn links too -->
+  </head>
+  <body style="background-color: bisque">
+    <!-- here also we can add cdn links but no -->
+    <h1>Hi there...</h1>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!-- here is the best position -->
+    <script src="script.js"></script>
+    <!-- cdn links should not be placed here, ReactDOM is not defined -->
+  </body>
+</html>
